@@ -4,6 +4,8 @@
 
 package frc.robot;
 
+import frc.robot.util.preferences.PrefDouble;
+
 /**
  * The Constants class provides a convenient place for teams to hold robot-wide numerical or boolean
  * constants. This class should not be used for any other purpose. All constants should be declared
@@ -18,6 +20,10 @@ public final class Constants {
   }
 
   public static final class ArmConstants {
-    public static final PrefDouble kPArm = ;
+    public static final PrefDouble kP_Arm = new PrefDouble("kP_Arm", 0);
+
+    // mm = motion magic
+    public static final PrefDouble mmCruiseVelocity_Arm = new PrefDouble("mmCruiseVelocity_Arm", 0);
+    public static final PrefDouble mmAcceleration_Arm = new PrefDouble("mmAcceleration_Arm", 0);
   }
 }
